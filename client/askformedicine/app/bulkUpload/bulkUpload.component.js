@@ -9,14 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ProductService = (function () {
-    function ProductService() {
+var common_1 = require('@angular/common');
+var ng2_file_upload_1 = require('../assets/components/ng2-file-upload/ng2-file-upload');
+var BulkUploadComponent = (function () {
+    function BulkUploadComponent() {
     }
-    ProductService = __decorate([
-        core_1.Injectable(), 
+    BulkUploadComponent = __decorate([
+        core_1.Component({
+            selector: 'afm-app',
+            templateUrl: './app/bulkUpload/bulkUpload.component.html',
+            directives: [ng2_file_upload_1.FILE_UPLOAD_DIRECTIVES, common_1.NgClass, common_1.NgStyle, common_1.CORE_DIRECTIVES, common_1.FORM_DIRECTIVES]
+        }), 
         __metadata('design:paramtypes', [])
-    ], ProductService);
-    return ProductService;
+    ], BulkUploadComponent);
+    return BulkUploadComponent;
 }());
-exports.ProductService = ProductService;
-//# sourceMappingURL=product.service.js.map
+exports.BulkUploadComponent = BulkUploadComponent;
+//# sourceMappingURL=bulkUpload.component.js.map

@@ -9,15 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var platform_browser_1 = require('@angular/platform-browser');
+var router_1 = require('@angular/router');
+var bulkUpload_component_1 = require('./bulkUpload/bulkUpload.component');
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(titleService) {
+        this.titleService = titleService;
     }
+    AppComponent.prototype.setTitle = function (newTitle) {
+        this.titleService.setTitle(newTitle);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'afm-app',
-            templateUrl: './app/app.component.html'
+            templateUrl: './app/app.component.html',
+            directives: [router_1.ROUTER_DIRECTIVES],
+            precompile: [
+                bulkUpload_component_1.BulkUploadComponent
+            ]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [platform_browser_1.Title])
     ], AppComponent);
     return AppComponent;
 }());
