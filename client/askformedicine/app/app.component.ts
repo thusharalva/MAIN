@@ -7,7 +7,7 @@ import { BulkUploadComponent } from './bulkUpload/bulkUpload.component';
 @Component({
   selector: 'afm-app',
   templateUrl: './app/app.component.html',
-  directives: [ ROUTER_DIRECTIVES ],
+  directives: [ ROUTER_DIRECTIVES ]//,
   precompile: [
     BulkUploadComponent
   ]

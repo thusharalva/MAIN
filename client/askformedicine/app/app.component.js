@@ -23,7 +23,8 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'afm-app',
             templateUrl: './app/app.component.html',
-            directives: [router_1.ROUTER_DIRECTIVES],
+            directives: [router_1.ROUTER_DIRECTIVES] //,
+            ,
             precompile: [
                 bulkUpload_component_1.BulkUploadComponent
             ]
