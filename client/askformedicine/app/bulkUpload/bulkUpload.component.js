@@ -11,9 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var ng2_file_upload_1 = require('../assets/components/ng2-file-upload/ng2-file-upload');
+var URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
 var BulkUploadComponent = (function () {
     function BulkUploadComponent() {
+        this.uploader = new ng2_file_upload_1.FileUploader({ url: URL });
     }
+    BulkUploadComponent.prototype.uploadDoc = function () {
+        //this.uploader.url = URL+ "/bulkUpload";
+        //this.uploader.setUrl( URL+ "/bulkUpload");
+        this.uploader.uploadAll();
+    };
     BulkUploadComponent = __decorate([
         core_1.Component({
             selector: 'afm-app',

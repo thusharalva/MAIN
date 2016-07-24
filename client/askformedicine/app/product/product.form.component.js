@@ -9,24 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var router_1 = require('@angular/router');
-var AppComponent = (function () {
-    function AppComponent(titleService) {
-        this.titleService = titleService;
+var ProductFormComponent = (function () {
+    function ProductFormComponent() {
     }
-    AppComponent.prototype.setTitle = function (newTitle) {
-        this.titleService.setTitle(newTitle);
+    //onLoad functionalities
+    ProductFormComponent.prototype.ngOnInit = function () {
     };
-    AppComponent = __decorate([
+    ProductFormComponent = __decorate([
         core_1.Component({
-            selector: 'afm-app',
-            templateUrl: './app/app.component.html',
-            directives: [router_1.ROUTER_DIRECTIVES] //,
+            selector: 'product-form',
+            templateUrl: './app/product/product.form.component.html'
         }), 
-        __metadata('design:paramtypes', [platform_browser_1.Title])
-    ], AppComponent);
-    return AppComponent;
+        __metadata('design:paramtypes', [])
+    ], ProductFormComponent);
+    return ProductFormComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ProductFormComponent = ProductFormComponent;
+//# sourceMappingURL=product.form.component.js.map

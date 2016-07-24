@@ -8,9 +8,7 @@ import { BulkUploadComponent } from './bulkUpload/bulkUpload.component';
   selector: 'afm-app',
   templateUrl: './app/app.component.html',
   directives: [ ROUTER_DIRECTIVES ]//,
-  precompile: [
-    BulkUploadComponent
-  ]
+  //precompile: [  BulkUploadComponent]
 })
 
 export class AppComponent {
